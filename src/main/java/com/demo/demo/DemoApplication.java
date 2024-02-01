@@ -17,7 +17,7 @@ public class DemoApplication implements CommandLineRunner {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-	@Autowired
+	
 	
 	@Override
 	public void run(String... args) throws Exception {
@@ -26,3 +26,67 @@ public class DemoApplication implements CommandLineRunner {
 	}
 
 }
+
+//----------------------------------------------------------------------------
+
+//package com.demo.demo;
+//
+//import org.springframework.boot.CommandLineRunner;
+//import org.springframework.boot.SpringApplication;
+//import org.springframework.boot.autoconfigure.SpringBootApplication;
+//import org.springframework.boot.autoconfigure.domain.EntityScan;import org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration;
+//import org.springframework.stereotype.Component;
+//
+//@EntityScan(basePackages = {"model"})
+//@SpringBootApplication(exclude = {SecurityAutoConfiguration.class})
+//public class DemoApplication {
+//
+//    public static void main(String[] args) {
+//        SpringApplication.run(DemoApplication.class, args);
+//    }
+//}
+//
+//@Component
+//class MyCommandLineRunner implements CommandLineRunner {
+//
+//    @Override
+//    public void run(String... args) throws Exception {
+//        // Your logic to be executed during application startup
+//    }
+//}
+
+//---------------------------------------------------------------------
+
+//package com.demo.demo;
+//
+//import org.modelmapper.ModelMapper;
+//import org.springframework.boot.SpringApplication;
+//import org.springframework.boot.autoconfigure.SpringBootApplication;
+//import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
+//import org.springframework.context.annotation.Bean;
+//import org.springframework.web.servlet.config.annotation.CorsRegistry;
+//import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+//
+//@SpringBootApplication
+//public class DemoApplication {
+//     
+//	public static void main(String[] args) {
+//		SpringApplication.run(DemoApplication.class, args);
+//	}
+//
+//	@Bean
+//	public ModelMapper modelMapper() {
+//		return new ModelMapper();
+//	}
+//	
+//	@Bean
+//	public WebMvcConfigurer corsConfigurer() {
+//		return new WebMvcConfigurer() {
+//			@Override
+//			public void addCorsMappings(CorsRegistry registry) {
+//				registry.addMapping("/*").allowedHeaders("*").allowedOrigins("*").allowedMethods("*").allowCredentials(true);
+//			}
+//		};
+//	}
+//	
+//}
