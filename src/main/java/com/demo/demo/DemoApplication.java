@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 
-@EntityScan(basePackages = {"model"})
+@EntityScan(basePackages = {"com.demo.demo.model"})
 @SpringBootApplication
 
 //implement CommandLineRunner and @Override Run method-it execute when main method start first time
