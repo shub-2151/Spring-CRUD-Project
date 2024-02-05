@@ -1,10 +1,12 @@
 package com.demo.demo.services;
 
-import org.springframework.stereotype.Service;
+import com.demo.demo.model.RegisterModel;
 
-//its use for 
-@Service
-public class RegisterService {
+
+//its use for implementing in serviceImpl class
+
+public interface RegisterService {
 
 	
+	RegisterModel createUser(RegisterModel rmodel);
 }

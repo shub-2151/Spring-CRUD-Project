@@ -10,9 +10,10 @@ import java.util.List;
 
  
 //We are creating repository class and extend JpaRepository - becoz it help to performing CRUD operation
+// for sending retriving updating deleting operation done by using repo
 //extends JpaRepository- is generic type so we need to write this model name and their id type 
 
-@Repository
+//No need to write this "@Repository" Anotation bcoz its by default provided by JpaRepositotry
 public interface registerRepo extends JpaRepository<RegisterModel, Integer> {
 
 //	List<RegisterModel> findByMobileNumber(long mobileNumber);
