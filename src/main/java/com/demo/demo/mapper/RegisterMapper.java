@@ -9,7 +9,7 @@ public class RegisterMapper {
 // Why we convert - bcoz use of Dto insted of Entity is best practise and security purpose use dto insted of Entity
 // if you are retriving data then get only this field which you want that why isential information becoming secure
 	
-	// make static method for map RegisterDto to RegisterModel
+	// make static method for mapping RegisterDto to RegisterModel
 	public static RegisterModel mapToRegisterModel (RegisterDto registerDto) {
 		RegisterModel registerModel = new RegisterModel();
 		
@@ -21,9 +21,15 @@ public class RegisterMapper {
 		return registerModel;
 	}
 	
-	// make static mehtod 
+	// make static method for converting(mapping) RegisterModel to RegisterDto
 	public static RegisterDto mapToRegisterDto(RegisterModel registerModel) {
+		RegisterDto registerDto = new RegisterDto(); // jya class mde convert kraych ahe tyacha object create krane.
 		
-		return;
+		registerDto.getId();
+		registerDto.getName();
+		registerDto.getEmail();
+		registerDto.getMobileNumber();
+		registerDto.getStatus();
+		return registerDto;
 	}
 }
