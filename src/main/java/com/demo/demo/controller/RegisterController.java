@@ -15,18 +15,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.demo.demo.model.RegisterModel;
-import com.demo.demo.repository.registerRepo;
+import com.demo.demo.repository.RegisterRepo;
 import com.demo.demo.services.RegisterService;
 
 //All Restful API are design inside of this package and for that we need servicesImple
 // Actually controller leyer is use for design api's but for that controller layer is depend on services 
+
 @CrossOrigin("*")
 @RestController
 @RequestMapping("/api/register")
 public class RegisterController {
 
 	@Autowired
-	private registerRepo rRepo;
+	private RegisterRepo rRepo;
 	
 	@Autowired
 	private RegisterService rService;
@@ -60,7 +61,7 @@ public class RegisterController {
 	}
 	
 	// If you are using ResponseEntity then we can add complete response like HttpStatus,header
-	//@RequestBody - use to convert json to java object
+	//@RequestBody - use to convert JSON to java object
 	
 	@PostMapping("/create")
 	public ResponseEntity<RegisterModel> createUser(@RequestBody RegisterModel rModel) {

@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 
 import com.demo.demo.exceptions.ResourceNotFoundException;
 import com.demo.demo.model.RegisterModel;
-import com.demo.demo.repository.registerRepo;
+import com.demo.demo.repository.RegisterRepo;
 import com.demo.demo.services.RegisterService;
 
 // serviceImpl is used for controller and the all business logic is inside of serviceImpl class 
@@ -20,10 +20,10 @@ public class RegisterServicesImpl implements RegisterService{
 //	1. setter based dependency- whenever you want optional parameter
 //	2. constructor base dependency- whenever you want mandatory parameter
 	
-	private registerRepo rRepo;
+	private RegisterRepo rRepo;
 
 
-	public RegisterServicesImpl(com.demo.demo.repository.registerRepo rRepo) {
+	public RegisterServicesImpl(com.demo.demo.repository.RegisterRepo rRepo) {
 		super();
 		this.rRepo = rRepo;
 	}

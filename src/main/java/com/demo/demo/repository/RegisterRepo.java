@@ -14,7 +14,7 @@ import java.util.List;
 //extends JpaRepository- is generic type so we need to write this model name and their id type 
 
 //No need to write this "@Repository" Anotation bcoz its by default provided by JpaRepositotry
-public interface registerRepo extends JpaRepository<RegisterModel, Integer> {
+public interface RegisterRepo extends JpaRepository<RegisterModel, Integer> {
 
 //	List<RegisterModel> findByMobileNumber(long mobileNumber);
 //	List<RegisterModel>findByMobileNumber (long mobileNumber);
