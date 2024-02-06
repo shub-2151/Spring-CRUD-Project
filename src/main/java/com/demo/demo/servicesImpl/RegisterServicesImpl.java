@@ -1,9 +1,11 @@
 package com.demo.demo.servicesImpl;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
+import com.demo.demo.exceptions.ResourceNotFoundException;
 import com.demo.demo.model.RegisterModel;
-import com.demo.demo.payload.RegisterDto;
 import com.demo.demo.repository.registerRepo;
 import com.demo.demo.services.RegisterService;
 
@@ -33,5 +35,41 @@ public class RegisterServicesImpl implements RegisterService{
 		
 		return rRepo.save(rmodel);
 	}
+
+	@Override
+	public RegisterModel save(RegisterModel registerModel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+//	add unimplement method and change return type using Repository object . method 
+	@Override
+	public List<RegisterModel> getAllData() {
+		return rRepo.findAll();
+	}
+
+	// for get by id
+	@Override
+	public RegisterModel getById(int id) {
+		// TODO Auto-generated method stub
+		return rRepo.findById(id).orElseThrow(() ->
+		new ResourceNotFoundException("User not found"));
+	}
+
+	// for update record
+	@Override
+	public RegisterModel updateRecord(RegisterModel user,int id) {
+	RegisterModel EData= rRepo.findById(id).orElseThrow(()->
+		new ResourceNotFoundException("user not found"));
+	
+		 EData.setName(user.getName());
+		 EData.setEmail(user.getEmail());
+		 EData.setMobileNumber(user.getMobileNumber());
+		 EData.setStatus(user.getStatus());
+		 
+		 rRepo.save(EData);
+		 return EData;
+	}
+		
 	
 }
