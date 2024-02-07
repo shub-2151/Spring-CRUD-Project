@@ -11,25 +11,25 @@ public class RegisterMapper {
 	
 	// make static method for mapping RegisterDto to RegisterModel
 	public static RegisterModel mapToRegisterModel (RegisterDto registerDto) {
-		RegisterModel registerModel = new RegisterModel();
-		
-		registerModel.getId();
-		registerModel.getName();
-		registerModel.getEmail();
-		registerModel.getMobileNumber();
-		registerModel.getStatus();
+		RegisterModel registerModel = new RegisterModel(
+		registerDto.getId(),
+		registerDto.getName(),
+		registerDto.getEmail(),
+		registerDto.getMobileNumber(),
+		registerDto.getStatus()
+		);
 		return registerModel;
 	}
 	
 	// make static method for converting(mapping) RegisterModel to RegisterDto
-	public static RegisterDto mapToRegisterDto(RegisterModel registerModel) {
-		RegisterDto registerDto = new RegisterDto(); // jya class mde convert kraych ahe tyacha object create krane.
-		
-		registerDto.getId();
-		registerDto.getName();
-		registerDto.getEmail();
-		registerDto.getMobileNumber();
-		registerDto.getStatus();
+	public static RegisterDto mapToDto(RegisterModel registerModel) {
+		RegisterDto registerDto = new RegisterDto(
+				registerModel.getId(),
+				registerModel.getName(),
+				registerModel.getEmail(),
+				registerModel.getMobileNumber(),
+				registerModel.getStatus()
+				);
 		return registerDto;
 	}
 }

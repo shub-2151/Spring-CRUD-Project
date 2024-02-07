@@ -19,7 +19,7 @@ import com.demo.demo.repository.RegisterRepo;
 import com.demo.demo.services.RegisterService;
 
 //All Restful API are design inside of this package and for that we need servicesImple
-// Actually controller leyer is use for design api's but for that controller layer is depend on services 
+// Actually controller layer is use for design api's but for that controller layer is depend on services 
 
 @CrossOrigin("*")
 @RestController
@@ -27,7 +27,7 @@ import com.demo.demo.services.RegisterService;
 public class RegisterController {
 
 	@Autowired
-	private RegisterRepo rRepo;
+	private RegisterRepo rRepo; 
 	
 	@Autowired
 	private RegisterService rService;

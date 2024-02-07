@@ -9,19 +9,17 @@ import com.demo.demo.model.RegisterModel;
 
 public interface RegisterService {
 
-	//declare method for post api
+	//declare method for post api(Getting data from api)
   //Entity name   method name Entity name   make object of this entity
 	RegisterModel createUser(RegisterModel rmodel);
 	
-	RegisterModel save(RegisterModel registerModel);
-	
-	//for getting all data by using api 
+	//for sending all data by using Get Api (Setting data to api)
 	List<RegisterModel> getAllData();
 
-	//declare method for get by id api
+	//declare method for get by id api (Getting id and sending data)
 	RegisterModel getById(int id);
 	
-	//declare method for update record	
+	//declare method for update record	(Getting data from api)
 	RegisterModel updateRecord(RegisterModel user, int id);
 	
 }

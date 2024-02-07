@@ -36,11 +36,6 @@ public class RegisterServicesImpl implements RegisterService{
 		return rRepo.save(rmodel);
 	}
 
-	@Override
-	public RegisterModel save(RegisterModel registerModel) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 //	add unimplement method and change return type using Repository object . method 
 	@Override
