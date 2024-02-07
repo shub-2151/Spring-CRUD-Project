@@ -5,7 +5,9 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.demo.demo.exceptions.ResourceNotFoundException;
+import com.demo.demo.mapper.RegisterMapper;
 import com.demo.demo.model.RegisterModel;
+import com.demo.demo.payload.RegisterDto;
 import com.demo.demo.repository.RegisterRepo;
 import com.demo.demo.services.RegisterService;
 
@@ -29,21 +31,35 @@ public class RegisterServicesImpl implements RegisterService{
 	}
 
 //	Add unimplements method and add return type
-	
-	@Override
-	public RegisterModel createUser(RegisterModel rmodel) {
-		
-		return rRepo.save(rmodel);
-	}
+	//this for using Dto
+	//getting alldata from api 
+	 @Override
+	    public RegisterDto createUser(RegisterDto registerDto) {
+	        // Convert RegisterDto to RegisterModel using RegisterMapper
+	        RegisterModel registerModel = RegisterMapper.mapToRegisterModel(registerDto);
+	        
+	        // Save the RegisterModel using repository
+	        RegisterModel savedModel = rRepo.save(registerModel);
+	        
+	        // Convert the saved RegisterModel back to RegisterDto and return
+	        return RegisterMapper.mapToDto(savedModel);
+	    }
+	 //this for using model
+//	@Override
+//	public RegisterDto createUser(RegisterDto registerDto) {
+//		
+//		return rRepo.save(registerDto);
+//	}
 
 
 //	add unimplement method and change return type using Repository object . method 
+	 //sending all data to api
 	@Override
 	public List<RegisterModel> getAllData() {
 		return rRepo.findAll();
 	}
 
-	// for get by id
+	// sending to api  by id
 	@Override
 	public RegisterModel getById(int id) {
 		// TODO Auto-generated method stub

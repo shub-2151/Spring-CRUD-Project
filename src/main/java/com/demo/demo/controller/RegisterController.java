@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.demo.demo.model.RegisterModel;
+import com.demo.demo.payload.RegisterDto;
 import com.demo.demo.repository.RegisterRepo;
 import com.demo.demo.services.RegisterService;
 
@@ -64,9 +65,9 @@ public class RegisterController {
 	//@RequestBody - use to convert JSON to java object
 	
 	@PostMapping("/create")
-	public ResponseEntity<RegisterModel> createUser(@RequestBody RegisterModel rModel) {
-		RegisterModel rController = this.rService.createUser(rModel);
-		return new ResponseEntity<RegisterModel>(rController,HttpStatus.CREATED);
+	public ResponseEntity<RegisterDto> createUser(@RequestBody RegisterDto rModel) {
+		RegisterDto rController = this.rService.createUser(rModel);
+		return new ResponseEntity<RegisterDto>(rController,HttpStatus.CREATED);
 	}
 			
 }
