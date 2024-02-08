@@ -14,7 +14,7 @@ import com.demo.demo.services.RegisterService;
 // serviceImpl is used for controller and the all business logic is inside of serviceImpl class 
 // and for serviceImple need service interface for implementation 
 
-// make sure @Service anotation is written 
+// make sure @Service annotation is written 
 @Service   // for indicating this class is service class
 public class RegisterServicesImpl implements RegisterService{
 

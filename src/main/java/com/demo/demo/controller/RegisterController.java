@@ -29,18 +29,25 @@ public class RegisterController {
 
 	// If you want to get all functionality then you need to make object as well as @Autowired,
 	// without @Autowired functionality not coming.
-	@Autowired
+//	@Autowired
 	private RegisterRepo rRepo; 
 	
-	@Autowired
+//	@Autowired
 	private RegisterService rService;
+	
+	//insted of @Autowired we can use constructor and its best practice if you create constructor then no need to write @Autowired.
+	public RegisterController(RegisterRepo rRepo, RegisterService rService) {
+		super();
+		this.rRepo = rRepo;
+		this.rService = rService;
+	}
 	
 
 	@GetMapping("/getUser")
 	public List<RegisterModel> getAllUser(){
 		return rRepo.findAll();
 	}
-	
+
 	// get by id
 	// @Pathvariable - bcoz we are sending value, {id} - for passing dynamic value
 	@GetMapping("/getById/{id}")

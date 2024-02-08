@@ -22,13 +22,19 @@ import com.demo.demo.services.EmpService;
 @RequestMapping("/api/emp")
 public class EmpController {
 
-	@Autowired
 	private EmpService empService;
 	
 	//for get api
-	@Autowired
+	
 	private EmpRepo empRepo;
 	
+	public EmpController(EmpService empService, EmpRepo empRepo) {
+		super();
+		this.empService = empService;
+		this.empRepo = empRepo;
+	}
+
+
 	@PostMapping("/createEmpRecord")
 	public ResponseEntity<EmpDto> createEmp(@RequestBody EmpDto empDto) {
 		EmpDto empDto2 = this.empService.addEmpData(empDto);
