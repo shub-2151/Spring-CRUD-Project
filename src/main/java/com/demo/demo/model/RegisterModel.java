@@ -11,10 +11,10 @@ import lombok.NoArgsConstructor;
 
 
 @Entity
-@Table(name="register")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name="register_user")
 public class RegisterModel {
 
 	@Id //specify id to perticular column of table

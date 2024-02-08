@@ -27,6 +27,8 @@ import com.demo.demo.services.RegisterService;
 @RequestMapping("/api/register")
 public class RegisterController {
 
+	// If you want to get all functionality then you need to make object as well as @Autowired,
+	// without @Autowired functionality not coming.
 	@Autowired
 	private RegisterRepo rRepo; 
 	
@@ -47,7 +49,7 @@ public class RegisterController {
 		return new ResponseEntity<RegisterModel>(getbyid, HttpStatus.OK);
 	}
 	
-	@GetMapping("/getAllUseRecord")
+	@GetMapping("/getAllUserRecord")
 //  keyword  list of all data with entity name method name.  return type service. created method inside of servicesImple 	
 	public List<RegisterModel> getListOfUser(){
 		return rService.getAllData();

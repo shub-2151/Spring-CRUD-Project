@@ -12,7 +12,7 @@ public class EmpMapper {
 				empDto.getFName(),
 				empDto.getLName(),
 				empDto.getEmail(),
-				empDto.getMNumbar()
+				empDto.getMNumber()
 				);
 		return empModel;
 	}

@@ -21,5 +21,5 @@ public class EmpDto {
 	private String fName;
 	private String lName;
 	private String email;
-	private String mNumbar;
+	private String mNumber;
 }
