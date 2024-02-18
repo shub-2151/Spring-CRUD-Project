@@ -1,15 +1,15 @@
-package com.demo.demo.servicesImpl;
+package com.EmpMngSpringBoot.servicesImpl;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.demo.demo.exceptions.ResourceNotFoundException;
-import com.demo.demo.mapper.RegisterMapper;
-import com.demo.demo.model.RegisterModel;
-import com.demo.demo.payload.RegisterDto;
-import com.demo.demo.repository.RegisterRepo;
-import com.demo.demo.services.RegisterService;
+import com.EmpMngSpringBoot.exceptions.ResourceNotFoundException;
+import com.EmpMngSpringBoot.mapper.RegisterMapper;
+import com.EmpMngSpringBoot.model.RegisterModel;
+import com.EmpMngSpringBoot.payload.RegisterDto;
+import com.EmpMngSpringBoot.repository.RegisterRepo;
+import com.EmpMngSpringBoot.services.RegisterService;
 
 // serviceImpl is used for controller and the all business logic is inside of serviceImpl class 
 // and for serviceImple need service interface for implementation 
@@ -26,7 +26,7 @@ public class RegisterServicesImpl implements RegisterService{
 	private RegisterRepo rRepo;
 
 
-	public RegisterServicesImpl(com.demo.demo.repository.RegisterRepo rRepo) {
+	public RegisterServicesImpl(com.EmpMngSpringBoot.repository.RegisterRepo rRepo) {
 		super();
 		this.rRepo = rRepo;
 	}

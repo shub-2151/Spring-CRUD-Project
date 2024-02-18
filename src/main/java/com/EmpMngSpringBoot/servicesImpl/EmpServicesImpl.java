@@ -1,14 +1,14 @@
-package com.demo.demo.servicesImpl;
+package com.EmpMngSpringBoot.servicesImpl;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.demo.demo.mapper.EmpMapper;
-import com.demo.demo.model.EmpModel;
-import com.demo.demo.payload.EmpDto;
-import com.demo.demo.repository.EmpRepo;
-import com.demo.demo.services.EmpService;
+import com.EmpMngSpringBoot.mapper.EmpMapper;
+import com.EmpMngSpringBoot.model.EmpModel;
+import com.EmpMngSpringBoot.payload.EmpDto;
+import com.EmpMngSpringBoot.repository.EmpRepo;
+import com.EmpMngSpringBoot.services.EmpService;
 
 @Service
 public class EmpServicesImpl implements EmpService {

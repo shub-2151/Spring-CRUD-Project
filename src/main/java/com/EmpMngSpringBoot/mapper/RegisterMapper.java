@@ -1,7 +1,7 @@
-package com.demo.demo.mapper;
+package com.EmpMngSpringBoot.mapper;
 
-import com.demo.demo.model.RegisterModel;
-import com.demo.demo.payload.RegisterDto;
+import com.EmpMngSpringBoot.model.RegisterModel;
+import com.EmpMngSpringBoot.payload.RegisterDto;
 
 public class RegisterMapper {
 

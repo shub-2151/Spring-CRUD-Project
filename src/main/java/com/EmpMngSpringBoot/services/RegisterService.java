@@ -1,9 +1,9 @@
-package com.demo.demo.services;
+package com.EmpMngSpringBoot.services;
 
 import java.util.List;
 
-import com.demo.demo.model.RegisterModel;
-import com.demo.demo.payload.RegisterDto;
+import com.EmpMngSpringBoot.model.RegisterModel;
+import com.EmpMngSpringBoot.payload.RegisterDto;
 
 
 //its use for implementing in serviceImpl class

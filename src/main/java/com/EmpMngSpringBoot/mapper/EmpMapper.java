@@ -1,7 +1,7 @@
-package com.demo.demo.mapper;
+package com.EmpMngSpringBoot.mapper;
 
-import com.demo.demo.model.EmpModel;
-import com.demo.demo.payload.EmpDto;
+import com.EmpMngSpringBoot.model.EmpModel;
+import com.EmpMngSpringBoot.payload.EmpDto;
 
 public class EmpMapper {
 

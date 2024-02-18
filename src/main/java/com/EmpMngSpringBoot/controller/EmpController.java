@@ -1,4 +1,4 @@
-package com.demo.demo.controller;
+package com.EmpMngSpringBoot.controller;
 
 import java.util.List;
 
@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.demo.demo.model.EmpModel;
-import com.demo.demo.payload.EmpDto;
-import com.demo.demo.repository.EmpRepo;
-import com.demo.demo.services.EmpService;
+import com.EmpMngSpringBoot.model.EmpModel;
+import com.EmpMngSpringBoot.payload.EmpDto;
+import com.EmpMngSpringBoot.repository.EmpRepo;
+import com.EmpMngSpringBoot.services.EmpService;
 
 @CrossOrigin("*")
 @RestController

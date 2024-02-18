@@ -1,4 +1,4 @@
-package com.demo.demo.model;
+package com.EmpMngSpringBoot.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

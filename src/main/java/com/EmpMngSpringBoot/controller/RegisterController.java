@@ -1,4 +1,4 @@
-package com.demo.demo.controller;
+package com.EmpMngSpringBoot.controller;
 
 import java.util.List;
 
@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.demo.demo.model.RegisterModel;
-import com.demo.demo.payload.RegisterDto;
-import com.demo.demo.repository.RegisterRepo;
-import com.demo.demo.services.RegisterService;
+import com.EmpMngSpringBoot.model.RegisterModel;
+import com.EmpMngSpringBoot.payload.RegisterDto;
+import com.EmpMngSpringBoot.repository.RegisterRepo;
+import com.EmpMngSpringBoot.services.RegisterService;
 
 //All Restful API are design inside of this package and for that we need servicesImple
 // Actually controller layer is use for design api's but for that controller layer is depend on services 

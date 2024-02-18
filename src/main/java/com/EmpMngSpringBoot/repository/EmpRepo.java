@@ -1,8 +1,8 @@
-package com.demo.demo.repository;
+package com.EmpMngSpringBoot.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.demo.demo.model.EmpModel;
+import com.EmpMngSpringBoot.model.EmpModel;
 
 public interface EmpRepo extends JpaRepository<EmpModel, Long> {
 

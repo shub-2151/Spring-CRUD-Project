@@ -1,4 +1,4 @@
-package com.demo.demo;
+package com.EmpMngSpringBoot;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -6,14 +6,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 
 
-@EntityScan(basePackages = {"com.demo.demo.model"})
+@EntityScan(basePackages = {"com.EmpMngSpringBoot.model"})
 @SpringBootApplication
 
 //implement CommandLineRunner and @Override Run method-it execute when main method start first time
-public class DemoApplication implements CommandLineRunner {
+public class EmpMngSpringBootApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(EmpMngSpringBootApplication.class, args);
 	}
 	
 	@Override

@@ -1,10 +1,10 @@
-package com.demo.demo.repository;
+package com.EmpMngSpringBoot.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
-import com.demo.demo.model.RegisterModel;
+import com.EmpMngSpringBoot.model.RegisterModel;
 
 import java.util.List;
 

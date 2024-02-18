@@ -1,4 +1,4 @@
-package com.demo.demo.payload;
+package com.EmpMngSpringBoot.payload;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

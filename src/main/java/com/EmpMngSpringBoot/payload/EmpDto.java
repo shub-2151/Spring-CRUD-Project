@@ -1,4 +1,4 @@
-package com.demo.demo.payload;
+package com.EmpMngSpringBoot.payload;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

@@ -1,9 +1,9 @@
-package com.demo.demo.services;
+package com.EmpMngSpringBoot.services;
 
 import java.util.List;
 
-import com.demo.demo.model.EmpModel;
-import com.demo.demo.payload.EmpDto;
+import com.EmpMngSpringBoot.model.EmpModel;
+import com.EmpMngSpringBoot.payload.EmpDto;
 
 public interface EmpService {
 
